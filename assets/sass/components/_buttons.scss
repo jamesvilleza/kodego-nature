@@ -1,0 +1,28 @@
+.btn-outline {
+  border: solid 1px white;
+  padding: 0.75rem 3rem;
+  margin: auto 0;
+  border-radius: 1.25rem;
+  // object-fit: contain;
+  width: fit-content;
+}
+.navigation {
+  border-radius: 50%;
+}
+.btn,
+.btn-small {
+  width: fit-content;
+  border: none;
+  background-color: $color-mediumpink;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+}
+.btn-small {
+  padding: 0.625rem 1rem;
+  margin: 2rem;
+}
+.pink {
+  border: solid 1px $color-mediumpink;
+  border-radius: 1.25rem;
+  justify-content: center;
+}

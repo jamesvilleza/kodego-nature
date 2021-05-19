@@ -1,0 +1,75 @@
+body {
+  font-family: $font-main;
+}
+.h3 {
+  font-size: 50px;
+}
+.no-margin {
+  margin: 0;
+}
+.h4-left,
+.btn {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  color: $color-mediumpink;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.h2 {
+  font-size: 66px;
+  line-height: 64px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.h5 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 100;
+  color: $color-lightgray;
+  font-family: $font-secondary;
+  font-weight: 300;
+}
+.description-icon {
+  font-family: $font-secondary;
+}
+.btn {
+  color: white;
+  font-size: 1rem;
+  &-small {
+    font-size: 0.875rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+  }
+  &-outline {
+    text-transform: uppercase;
+    color: $color-darkgreen;
+  }
+}
+.pink {
+  color: $color-mediumpink;
+}
+.white {
+  color: white;
+}
+.orange {
+  color: $color-orange;
+}
+.black {
+  color: black;
+}
+.description {
+  color: lightgrey;
+  line-height: 32px;
+}
+.center {
+  text-align: center;
+}
+span {
+  font-size: 20;
+  margin-left: 1.5rem;
+}
