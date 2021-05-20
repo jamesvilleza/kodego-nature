@@ -79,8 +79,22 @@
     }
   }
   &-text {
-    padding: 1rem;
-    margin: 2rem 0;
+    padding: 2rem 1.5rem;
+    .btn:first-of-type,
+    .h5,
+    .description {
+      margin-bottom: 1rem;
+    }
+    &-details {
+      margin-bottom: 2rem;
+      span:first-of-type {
+        margin-right: 3rem;
+      }
+      img {
+        height: 20px;
+        margin-right: 0.75rem;
+      }
+    }
   }
 }
 .card-route {

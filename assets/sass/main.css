@@ -239,8 +239,7 @@ p {
 }
 
 span {
-  font-size: 20;
-  margin-left: 1.5rem;
+  font-size: 20px;
 }
 
 .container__bg-green {
@@ -320,12 +319,9 @@ span {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -15px;
-  margin-right: -15px;
 }
 
 .column {
-  padding: 0 15px;
   width: 100%;
   border: 1px solid #111;
 }
@@ -693,8 +689,26 @@ span {
 }
 
 .card-adventure-text {
-  padding: 1rem;
-  margin: 2rem 0;
+  padding: 2rem 1.5rem;
+}
+
+.card-adventure-text .btn:first-of-type,
+.card-adventure-text .h5,
+.card-adventure-text .description {
+  margin-bottom: 1rem;
+}
+
+.card-adventure-text-details {
+  margin-bottom: 2rem;
+}
+
+.card-adventure-text-details span:first-of-type {
+  margin-right: 3rem;
+}
+
+.card-adventure-text-details img {
+  height: 20px;
+  margin-right: 0.75rem;
 }
 
 .card-route {
