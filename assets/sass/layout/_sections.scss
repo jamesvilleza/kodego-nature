@@ -37,7 +37,8 @@
   &--routes {
     background-color: $color-pink-light;
   }
-  &--routes {
+  &--routes,
+  &--locations {
     .h4 {
       letter-spacing: 3px;
       margin: 1rem;
