@@ -155,13 +155,11 @@ body {
   margin: 0;
 }
 
-.h4-left,
+.h4,
 .btn {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   color: #f39f8b;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
 }
 
 .h2 {
@@ -249,10 +247,20 @@ span {
   margin: 0 auto;
 }
 
+.section {
+  display: block;
+}
+
 .section-image {
-  padding: 0 0.75rem 2rem 0.75rem;
-  margin: 15px;
-  max-height: 378px;
+  text-align: center;
+}
+
+.section-image img {
+  height: 350px;
+}
+
+.section-text {
+  padding: 4rem 1.25rem;
 }
 
 .section-description {

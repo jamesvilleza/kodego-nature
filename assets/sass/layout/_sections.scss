@@ -8,11 +8,23 @@
   padding: 16px 23px 0px 23px;
   margin: 0 auto;
 }
-.section-image {
-  padding: 0 0.75rem 2rem 0.75rem;
-  margin: 15px;
-  max-height: 378px;
+.section {
+  display: block;
+  &-image {
+    text-align: center;
+    img {
+      height: 350px;
+    }
+  }
+  &-text {
+    padding: 4rem 1.25rem;
+  }
 }
+// .section-image {
+//   padding: 0 0.75rem 2rem 0.75rem;
+//   margin: 15px;
+//   max-height: 378px;
+// }
 .section-description {
   padding: 3rem 1.25rem 4rem;
 }
