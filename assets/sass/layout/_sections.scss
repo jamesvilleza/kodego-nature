@@ -10,6 +10,12 @@
 }
 .section {
   display: block;
+  position: relative;
+
+  &--activities {
+    background-color: $color-lightpink;
+  }
+
   &-image {
     text-align: center;
     img {
@@ -19,14 +25,11 @@
   &-text {
     padding: 4rem 1.25rem;
   }
-}
-// .section-image {
-//   padding: 0 0.75rem 2rem 0.75rem;
-//   margin: 15px;
-//   max-height: 378px;
-// }
-.section-description {
-  padding: 3rem 1.25rem 4rem;
+  &-wave {
+    position: absolute;
+    width: 100%;
+    top: -1px;
+  }
 }
 .section-2,
 .section-3 {
