@@ -178,7 +178,7 @@ p {
   font-size: 16px;
   line-height: 32px;
   font-weight: 100;
-  color: #222121;
+  color: #333333;
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
 }
@@ -222,8 +222,12 @@ p {
 }
 
 .description {
-  color: lightgrey;
+  color: #333333;
   line-height: 32px;
+}
+
+.description--light {
+  color: #ffffff;
 }
 
 .center {

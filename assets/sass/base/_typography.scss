@@ -11,7 +11,7 @@ body {
 .btn {
   font-family: $font-secondary;
   text-transform: uppercase;
-  color: $color-mediumpink;
+  color: $color-pink;
 }
 .h2 {
   font-size: 66px;
@@ -27,7 +27,7 @@ p {
   font-size: 16px;
   line-height: 32px;
   font-weight: 100;
-  color: $color-lightgray;
+  color: $color-gray;
   font-family: $font-secondary;
   font-weight: 300;
 }
@@ -46,11 +46,11 @@ p {
   }
   &-outline {
     text-transform: uppercase;
-    color: $color-darkgreen;
+    color: $color-green-dark;
   }
 }
 .pink {
-  color: $color-mediumpink;
+  color: $color-pink;
 }
 .white {
   color: white;
@@ -62,8 +62,11 @@ p {
   color: black;
 }
 .description {
-  color: lightgrey;
+  color: $color-gray;
   line-height: 32px;
+  &--light {
+    color: $color-gray-light;
+  }
 }
 .center {
   text-align: center;
