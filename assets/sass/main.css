@@ -169,6 +169,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.h4 {
+  font-size: 20px;
+}
+
 .h5 {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -256,6 +260,11 @@ span {
   position: relative;
 }
 
+.section-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .section--activities {
   background-color: #faded8;
 }
@@ -278,10 +287,13 @@ span {
   top: -1px;
 }
 
-.section-2,
-.section-3 {
-  margin-bottom: 8rem;
+.section--locations, .section--routes {
   background-color: #faded8;
+}
+
+.section--routes .h4 {
+  letter-spacing: 3px;
+  margin: 1rem;
 }
 
 .section-2 {
@@ -575,14 +587,12 @@ span {
   align-items: center;
 }
 
-.btn,
-.btn-small {
+.btn {
   width: fit-content;
   border: none;
   background-color: #f39f8b;
   padding: 0.75rem 1.25rem;
   border-radius: 1.25rem;
-  margin: 1rem 0;
 }
 
 .btn-small {
@@ -607,7 +617,7 @@ span {
   position: relative;
 }
 
-.card-icon:last-child {
+.card-icon:last-of-type {
   margin-bottom: 0;
 }
 
@@ -640,25 +650,9 @@ span {
   margin: auto 0;
 }
 
-.column-icon--1,
-.column-icon--2 {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-.column-icon--1 {
-  flex-grow: 1;
-}
-
-.column-icon--2 {
-  flex-grow: 4;
-}
-
 .card-adventure {
   margin: auto;
   max-width: 23.125rem;
-  max-height: 45rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -669,9 +663,30 @@ span {
 .card-adventure-image {
   width: 100%;
   height: 21rem;
+  position: relative;
 }
 
-.card-adventure-image img {
+.card-adventure-image-icon {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 48px;
+  height: 48px;
+  background-color: #f39f8b;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-adventure-image-icon img {
+  height: 24px;
+  width: 24px;
+}
+
+.card-adventure-image > img {
   object-fit: cover;
   width: 100%;
   height: 100%;

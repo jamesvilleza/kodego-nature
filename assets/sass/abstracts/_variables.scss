@@ -8,3 +8,8 @@ $color-pink-light: #faded8;
 $color-orange: #dc5534;
 $color-gray: #333333;
 $color-gray-light: #ffffff;
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

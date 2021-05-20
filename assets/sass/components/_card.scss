@@ -9,7 +9,7 @@
   z-index: 1;
   position: relative;
 
-  &:last-child {
+  &:last-of-type {
     margin-bottom: 0;
   }
 
@@ -44,23 +44,9 @@
   }
 }
 
-.column-icon--1,
-.column-icon--2 {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-.column-icon--1 {
-  flex-grow: 1;
-}
-.column-icon--2 {
-  flex-grow: 4;
-}
-
 .card-adventure {
   margin: auto;
   max-width: 23.125rem;
-  max-height: 45rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -69,7 +55,24 @@
   &-image {
     width: 100%;
     height: 21rem;
-    img {
+    position: relative;
+    &-icon {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+      width: 48px;
+      height: 48px;
+      background-color: $color-pink;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      @include flex-center;
+      img {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    & > img {
       object-fit: cover;
       width: 100%;
       height: 100%;
