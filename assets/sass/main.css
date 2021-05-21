@@ -254,6 +254,10 @@ span {
   margin: 0 auto;
 }
 
+#hero .description {
+  margin-bottom: 1rem;
+}
+
 .section {
   display: block;
   position: relative;
@@ -292,7 +296,7 @@ span {
 
 .section--routes .h4, .section--locations .h4 {
   letter-spacing: 3px;
-  margin: 1rem;
+  margin: 2rem 0;
 }
 
 .section-2 {
@@ -688,37 +692,93 @@ span {
   height: 100%;
 }
 
-.card-adventure-text {
+.card-adventure-text,
+.card-adventure .card-route-content {
   padding: 2rem 1.5rem;
 }
 
 .card-adventure-text .btn:first-of-type,
 .card-adventure-text .h5,
-.card-adventure-text .description {
+.card-adventure-text .description,
+.card-adventure .card-route-content .btn:first-of-type,
+.card-adventure .card-route-content .h5,
+.card-adventure .card-route-content .description {
   margin-bottom: 1rem;
 }
 
-.card-adventure-text-details {
+.card-adventure-text-details,
+.card-adventure .card-route-content-details {
   margin-bottom: 2rem;
 }
 
-.card-adventure-text-details span:first-of-type {
+.card-adventure-text-details span:first-of-type,
+.card-adventure .card-route-content-details span:first-of-type {
   margin-right: 3rem;
 }
 
-.card-adventure-text-details img {
+.card-adventure-text-details img,
+.card-adventure .card-route-content-details img {
   height: 20px;
   margin-right: 0.75rem;
 }
 
 .card-route {
-  padding: 2rem;
-  max-width: 23.125rem;
-  height: 28rem;
-  background-color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-route-slider {
+  padding: 1.25rem;
+}
+
+.card-route-bg {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card-route-bg-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 3rem;
+  position: absolute;
+}
+
+.card-route-content {
+  padding: 0 1.5rem 1.5rem;
+  z-index: 2;
+}
+
+.card-route-content .btn-outline {
+  width: auto;
+  text-align: center;
+  color: #001d20;
+}
+
+.card-route-content-image img {
+  width: 100%;
+}
+
+.card-route-content-image,
+.card-route-content .btn,
+.card-route-content .h5,
+.card-route-content .description {
+  margin-bottom: 1rem;
+}
+
+.card-route-content-details {
+  margin-bottom: 2rem;
+}
+
+.card-route-content-details span:first-of-type {
+  margin-right: 3rem;
+}
+
+.card-route-content-details img {
+  height: 20px;
+  margin-right: 0.75rem;
 }
 
 .card-location {
@@ -728,7 +788,7 @@ span {
   flex-direction: column;
   min-width: 170px;
   height: 224px;
-  box-shadow: 3px 4px 6px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 20px lightgray;
   border-radius: 1rem;
   background-color: white;
   margin-right: 1.5rem;
@@ -746,4 +806,9 @@ span {
   flex-wrap: nowrap;
   overflow-y: visible;
   overflow-x: scroll;
+  align-items: center;
+}
+
+.card-location-icon {
+  margin-bottom: 2rem;
 }

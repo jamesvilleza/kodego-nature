@@ -8,6 +8,11 @@
   padding: 16px 23px 0px 23px;
   margin: 0 auto;
 }
+#hero {
+  .description {
+    margin-bottom: 1rem;
+  }
+}
 .section {
   display: block;
   position: relative;
@@ -41,7 +46,7 @@
   &--locations {
     .h4 {
       letter-spacing: 3px;
-      margin: 1rem;
+      margin: 2rem 0;
     }
   }
 }

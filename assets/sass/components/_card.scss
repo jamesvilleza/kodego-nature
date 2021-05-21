@@ -43,7 +43,6 @@
     margin: auto 0;
   }
 }
-
 .card-adventure {
   margin: auto;
   max-width: 23.125rem;
@@ -78,7 +77,8 @@
       height: 100%;
     }
   }
-  &-text {
+  &-text,
+  .card-route-content {
     padding: 2rem 1.5rem;
     .btn:first-of-type,
     .h5,
@@ -98,13 +98,60 @@
   }
 }
 .card-route {
-  padding: 2rem;
-  max-width: 23.125rem;
-  height: 28rem;
-  background-color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 3px 3px 3px rgba($color: #000000, $alpha: 0.2);
+  // max-width: 23.125rem;
+  // margin: 0 1rem;
+  // background-color: white;
+  // display: flex;
+  // flex-direction: column;
+  // box-shadow: 15px 15px 40px gray;
+  &-slider {
+    padding: 1.25rem;
+  }
+  &-bg {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    &-container {
+      height: 100%;
+      width: 100%;
+      padding-top: 3rem;
+      position: absolute;
+    }
+  }
+  &-content {
+    padding: 0 1.5rem 1.5rem;
+    z-index: 2;
+    .btn-outline {
+      width: auto;
+      text-align: center;
+      color: $color-green-dark;
+    }
+    &-image {
+      img {
+        width: 100%;
+      }
+    }
+    &-image,
+    .btn,
+    .h5,
+    .description {
+      margin-bottom: 1rem;
+    }
+    &-details {
+      margin-bottom: 2rem;
+      span:first-of-type {
+        margin-right: 3rem;
+      }
+      img {
+        height: 20px;
+        margin-right: 0.75rem;
+      }
+    }
+  }
 }
 // .card-adventure {
 //   max-width: 23.125rem;
@@ -117,7 +164,7 @@
   flex-direction: column;
   min-width: 170px;
   height: 224px;
-  box-shadow: 3px 4px 6px 7px rgba($color: #000000, $alpha: 0.1);
+  box-shadow: 10px 10px 20px lightgray;
   border-radius: 1rem;
   background-color: white;
   margin-right: 1.5rem;
@@ -134,8 +181,10 @@
     flex-wrap: nowrap;
     overflow-y: visible;
     overflow-x: scroll;
+    align-items: center;
   }
 
   &-icon {
+    margin-bottom: 2rem;
   }
 }
