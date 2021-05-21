@@ -8,8 +8,15 @@ $color-pink-light: #faded8;
 $color-orange: #dc5534;
 $color-gray: #333333;
 $color-gray-light: #ffffff;
+
+// Breakpoints
+$sm-break: 576px;
+$md-break: 768px;
+$lg-break: 992px;
+$xl-break: 1200px;
+
 @mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

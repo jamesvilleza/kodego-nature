@@ -263,11 +263,17 @@ span {
   background-color: #235055;
 }
 
-.nav-grid {
+.nav {
   display: flex;
   justify-content: space-between;
-  padding: 16px 23px 0px 23px;
+  padding: 1rem 2rem 0;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 2rem 2rem 0;
+  }
 }
 
 #hero .description {
@@ -284,10 +290,17 @@ span {
   padding-right: 1rem;
 }
 
+@media screen and (min-width: 576px) {
+  .section-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-container {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 10vw;
+    padding-right: 10vw;
   }
 }
 
@@ -300,6 +313,7 @@ span {
 .section--activities {
   position: relative;
   background-color: #faded8;
+  overflow: visible;
 }
 
 .section--activities .container {
@@ -311,7 +325,13 @@ span {
 }
 
 .section-image img {
-  height: 350px;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .section-image img {
+    width: 80%;
+  }
 }
 
 .section-text {
@@ -658,21 +678,28 @@ span {
   background-color: white;
   display: flex;
   padding: 2rem;
-  margin: 0 auto 1rem;
+  height: 100%;
   border-radius: 1rem;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative;
 }
 
-@media screen and (min-width: 992px) {
-  .card-icon {
-    margin: 0;
-  }
+.card-icon-container {
+  margin: 0 auto 1rem;
 }
 
-.card-icon:last-of-type {
+.card-icon-container:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .card-icon-container {
+    margin: 0;
+  }
+  .card-icon-container:not(:last-of-type) {
+    padding-right: 1rem;
+  }
 }
 
 .card-icon-image {

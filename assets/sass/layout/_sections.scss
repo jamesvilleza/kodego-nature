@@ -5,27 +5,38 @@
         background-color: $color-green-light;
     }
 }
-.nav-grid {
+.nav {
     display: flex;
     justify-content: space-between;
-    padding: 16px 23px 0px 23px;
+    padding: 1rem 2rem 0;
     margin: 0 auto;
+
+    @media screen and (min-width: $md-break) {
+        padding: 2rem 2rem 0;
+    }
 }
 #hero {
     .description {
         margin-bottom: 1rem;
     }
 }
+
 .section {
     display: block;
     position: relative;
+
     &-container {
         padding-left: 1rem;
         padding-right: 1rem;
 
-        @media screen and (min-width: 768px) {
-            padding-left: 2rem;
-            padding-right: 2rem;
+        @media screen and (min-width: $sm-break) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        @media screen and (min-width: $md-break) {
+            padding-left: 10vw;
+            padding-right: 10vw;
         }
     }
 
@@ -40,6 +51,7 @@
     &--activities {
         position: relative;
         background-color: $color-pink-light;
+        overflow: visible;
 
         .container {
             overflow: visible;
@@ -49,7 +61,10 @@
     &-image {
         text-align: center;
         img {
-            height: 350px;
+            width: 100%;
+            @media screen and (min-width: $md-break) {
+                width: 80%;
+            }
         }
     }
     &-text {
