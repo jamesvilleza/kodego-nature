@@ -284,6 +284,19 @@ span {
   padding-right: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .section-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section--hero .section-image {
+    order: 1;
+  }
+}
+
 .section--activities {
   background-color: #faded8;
 }
@@ -359,7 +372,6 @@ span {
 
 .column {
   width: 100%;
-  border: 1px solid #111;
 }
 
 .column-1 {
@@ -638,7 +650,6 @@ span {
 }
 
 .card-icon {
-  max-width: 23.125rem;
   background-color: white;
   display: flex;
   padding: 1rem;
