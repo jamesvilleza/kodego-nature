@@ -242,9 +242,25 @@ span {
   font-size: 20px;
 }
 
+.section--about, .section--services {
+  color: #ffffff;
+}
+
+.section--services p {
+  margin-left: 2.6rem;
+}
+
+.section--services img {
+  margin-right: 0.75rem;
+}
+
 .container__bg-green {
   background-color: #235055;
   background-image: linear-gradient(#001d20, #235055);
+}
+
+.container__bg-green-light {
+  background-color: #235055;
 }
 
 .nav-grid {
@@ -290,13 +306,29 @@ span {
   top: -1px;
 }
 
+.section-wave-up {
+  position: absolute;
+  width: 100%;
+  margin-top: -9%;
+}
+
 .section--locations, .section--routes {
   background-color: #faded8;
 }
 
-.section--routes .h4, .section--locations .h4 {
+.section--about, .section--services {
+  background-color: #235055;
+}
+
+.section--routes .h4, .section--locations .h4, .section--about .h4 {
   letter-spacing: 3px;
   margin: 2rem 0;
+}
+
+.section--about .h4,
+.section--about .h3,
+.section--about .description {
+  margin-bottom: 1rem;
 }
 
 .section-2 {

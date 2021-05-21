@@ -1,6 +1,9 @@
 .container__bg-green {
   background-color: $color-green-light;
   background-image: linear-gradient($color-green-dark, $color-green-light);
+  &-light {
+    background-color: $color-green-light;
+  }
 }
 .nav-grid {
   display: flex;
@@ -38,15 +41,32 @@
     width: 100%;
     top: -1px;
   }
+  &-wave-up {
+    position: absolute;
+    width: 100%;
+    margin-top: -9%;
+  }
   &--locations,
   &--routes {
     background-color: $color-pink-light;
   }
+  &--about,
+  &--services {
+    background-color: $color-green-light;
+  }
   &--routes,
-  &--locations {
+  &--locations,
+  &--about {
     .h4 {
       letter-spacing: 3px;
       margin: 2rem 0;
+    }
+  }
+  &--about {
+    .h4,
+    .h3,
+    .description {
+      margin-bottom: 1rem;
     }
   }
 }
