@@ -38,7 +38,12 @@
     }
 
     &--activities {
+        position: relative;
         background-color: $color-pink-light;
+
+        .container {
+            overflow: visible;
+        }
     }
 
     &-image {

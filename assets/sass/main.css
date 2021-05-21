@@ -298,7 +298,12 @@ span {
 }
 
 .section--activities {
+  position: relative;
   background-color: #faded8;
+}
+
+.section--activities .container {
+  overflow: visible;
 }
 
 .section-image {
@@ -652,7 +657,7 @@ span {
 .card-icon {
   background-color: white;
   display: flex;
-  padding: 1rem;
+  padding: 2rem;
   margin: 0 auto 1rem;
   border-radius: 1rem;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
@@ -660,22 +665,14 @@ span {
   position: relative;
 }
 
+@media screen and (min-width: 992px) {
+  .card-icon {
+    margin: 0;
+  }
+}
+
 .card-icon:last-of-type {
   margin-bottom: 0;
-}
-
-.card-icon--1, .card-icon--2 {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem;
-}
-
-.card-icon--1 {
-  flex-grow: 1;
-}
-
-.card-icon--2 {
-  flex-grow: 4;
 }
 
 .card-icon-image {
@@ -687,10 +684,13 @@ span {
   align-items: center;
   border: none;
   border-radius: 50%;
+  margin-right: 2rem;
 }
 
 .card-icon-text {
-  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card-adventure {

@@ -1,30 +1,19 @@
 .card-icon {
     background-color: white;
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     margin: 0 auto 1rem;
     border-radius: 1rem;
     box-shadow: 1px 2px 5px rgba($color: #000000, $alpha: 0.2);
     z-index: 1;
     position: relative;
 
+    @media screen and (min-width: 992px) {
+        margin: 0;
+    }
+
     &:last-of-type {
         margin-bottom: 0;
-    }
-
-    &--1,
-    &--2 {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-    }
-
-    &--1 {
-        flex-grow: 1;
-    }
-
-    &--2 {
-        flex-grow: 4;
     }
 
     &-image {
@@ -36,10 +25,13 @@
         align-items: center;
         border: none;
         border-radius: 50%;
+        margin-right: 2rem;
     }
 
     &-text {
-        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 .card-adventure {
