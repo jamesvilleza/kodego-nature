@@ -101,6 +101,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  margin: 0 1.5rem;
   // max-width: 23.125rem;
   // margin: 0 1rem;
   // background-color: white;
@@ -108,17 +110,33 @@
   // flex-direction: column;
   // box-shadow: 15px 15px 40px gray;
   &-slider {
-    padding: 1.25rem;
+    position: relative;
+    padding-bottom: 2rem;
+
+    &-bg {
+      background-color: $color-pink;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      &-container {
+        height: 100%;
+        width: 100%;
+        padding-top: 8rem;
+        position: absolute;
+      }
+    }
   }
   &-bg {
     background-color: white;
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+    z-index: 1;
+    // margin: 1.5rem;
     &-container {
       height: 100%;
       width: 100%;
-      padding-top: 3rem;
+      padding-top: 5rem;
       position: absolute;
     }
   }
@@ -185,6 +203,15 @@
   }
 
   &-icon {
+    @include flex-center;
     margin-bottom: 2rem;
+    background-color: $color-pink-light;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 }

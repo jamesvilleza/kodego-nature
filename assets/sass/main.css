@@ -726,10 +726,27 @@ span {
   position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  margin: 0 1.5rem;
 }
 
 .card-route-slider {
-  padding: 1.25rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.card-route-slider-bg {
+  background-color: #f39f8b;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.card-route-slider-bg-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 8rem;
+  position: absolute;
 }
 
 .card-route-bg {
@@ -737,12 +754,13 @@ span {
   width: 100%;
   height: 100%;
   border-radius: 1rem;
+  z-index: 1;
 }
 
 .card-route-bg-container {
   height: 100%;
   width: 100%;
-  padding-top: 3rem;
+  padding-top: 5rem;
   position: absolute;
 }
 
@@ -810,5 +828,17 @@ span {
 }
 
 .card-location-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 2rem;
+  background-color: #faded8;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+}
+
+.card-location-icon img {
+  width: 3rem;
+  height: 3rem;
 }
