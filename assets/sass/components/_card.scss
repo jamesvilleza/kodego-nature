@@ -145,21 +145,53 @@
     overflow: hidden;
     margin: 0 1.5rem;
     z-index: 2;
+    min-width: calc(100% - 3rem);
+
+    @media screen and (min-width: $md-break) {
+        min-width: calc(6 / 12 * 100% - 3rem);
+    }
+
+    @media screen and (min-width: $lg-break) {
+        min-width: calc(4 / 12 * 100% - 3rem);
+    }
+
     &-slider {
-        z-index: 2;
         position: relative;
         padding-bottom: 2rem;
+        z-index: 2;
+        flex-wrap: nowrap;
+        overflow: auto;
+
+        @media screen and (min-width: $md-break) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+
+        @media screen and (min-width: $lg-break) {
+            padding-left: 10vw;
+            padding-right: 10vw;
+        }
 
         &-bg {
             background-color: $color-pink;
             width: 100%;
             height: 100%;
             border-radius: 1rem;
+            z-index: 2;
             &-container {
                 height: 100%;
                 width: 100%;
                 padding-top: 8rem;
                 position: absolute;
+                flex-grow: 1;
+
+                @media screen and (min-width: $md-break) {
+                    margin-left: -0.5rem;
+                }
+
+                @media screen and (min-width: $lg-break) {
+                    margin-left: -2rem;
+                }
             }
         }
     }
@@ -168,7 +200,7 @@
         width: 100%;
         height: 100%;
         border-radius: 1rem;
-        z-index: 1;
+        z-index: 2;
         &-container {
             height: 100%;
             width: 100%;
