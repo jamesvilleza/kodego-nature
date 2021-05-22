@@ -143,11 +143,41 @@
             margin-bottom: 1rem;
         }
     }
-}
+    &--locations {
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+        .circle-pink,
+        .circle-green {
+            z-index: 0;
+            display: none;
+        }
+        @media screen and (min-width: $lg-break) {
+            .circle-pink {
+                top: -10vw;
 
-.section-2 {
-    background-image: url(../../img/wave.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+                background-color: $color-pink;
+                margin-left: -8vw;
+                width: 35vw;
+                height: 35vw;
+            }
+
+            .circle-green {
+                right: 0;
+                top: 0;
+                background-color: #86d07e;
+                margin-top: 20vw;
+                margin-right: -8vw;
+                width: 40vw;
+                height: 40vw;
+            }
+
+            .circle-pink,
+            .circle-green {
+                position: absolute;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+    }
 }

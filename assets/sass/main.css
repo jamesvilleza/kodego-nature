@@ -4,6 +4,7 @@
 */
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 *,
@@ -405,11 +406,41 @@ span {
   margin-bottom: 1rem;
 }
 
-.section-2 {
-  background-image: url(../../img/wave.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.section--locations {
+  z-index: 1;
+  position: relative;
+  overflow-x: clip;
+}
+
+.section--locations .circle-pink,
+.section--locations .circle-green {
+  z-index: 0;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .section--locations .circle-pink {
+    top: -10vw;
+    background-color: #f39f8b;
+    margin-left: -8vw;
+    width: 35vw;
+    height: 35vw;
+  }
+  .section--locations .circle-green {
+    right: 0;
+    top: 0;
+    background-color: #86d07e;
+    margin-top: 20vw;
+    margin-right: -8vw;
+    width: 40vw;
+    height: 40vw;
+  }
+  .section--locations .circle-pink,
+  .section--locations .circle-green {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+  }
 }
 
 .container {
@@ -774,6 +805,7 @@ span {
   width: 100%;
   height: 50%;
   position: relative;
+  z-index: 2;
 }
 
 @media screen and (min-width: 992px) {
@@ -869,9 +901,11 @@ span {
   flex-direction: column;
   overflow: hidden;
   margin: 0 1.5rem;
+  z-index: 2;
 }
 
 .card-route-slider {
+  z-index: 2;
   position: relative;
   padding-bottom: 2rem;
 }
@@ -947,10 +981,11 @@ span {
   flex-direction: column;
   min-width: 170px;
   height: 224px;
-  box-shadow: 10px 10px 20px lightgray;
+  box-shadow: 0 12px 24px 0 rgba(51, 9, 0, 0.15);
   border-radius: 1rem;
   background-color: white;
   margin-right: 1.5rem;
+  z-index: 1;
 }
 
 .card-location:last-of-type {
@@ -963,9 +998,16 @@ span {
   height: 274px;
   display: flex;
   flex-wrap: nowrap;
-  overflow-y: visible;
-  overflow-x: scroll;
   align-items: center;
+  overflow-x: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .card-location-slider {
+    justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
 }
 
 .card-location-icon {
