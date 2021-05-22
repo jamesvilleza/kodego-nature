@@ -752,18 +752,36 @@ span {
 
 .card-adventure {
   margin: auto;
-  max-width: 23.125rem;
   background-color: white;
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
   overflow: hidden;
+  height: 90vh;
+}
+
+@media screen and (min-width: 992px) {
+  .card-adventure {
+    flex-direction: row;
+  }
+}
+
+.card-adventure-container {
+  justify-content: center;
 }
 
 .card-adventure-image {
   width: 100%;
-  height: 21rem;
+  height: 50%;
   position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .card-adventure-image {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+  }
 }
 
 .card-adventure-image-icon {
@@ -820,6 +838,29 @@ span {
 .card-adventure .card-route-content-details img {
   height: 20px;
   margin-right: 0.75rem;
+}
+
+@media screen and (min-width: 992px) {
+  .card-adventure-text {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .card-adventure-text .h5 {
+    font-size: 50px;
+    line-height: 48px;
+    margin: 2rem 0;
+  }
+  .card-adventure-text .description {
+    flex-grow: 1;
+  }
+  .card-adventure-text-details {
+    margin-bottom: 3rem;
+  }
+  .card-adventure-text-cta {
+    justify-content: flex-end;
+  }
 }
 
 .card-route {

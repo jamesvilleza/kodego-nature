@@ -43,16 +43,32 @@
 }
 .card-adventure {
     margin: auto;
-    max-width: 23.125rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 2rem;
     overflow: hidden;
+    height: 90vh;
+
+    @media screen and (min-width: $lg-break) {
+        flex-direction: row;
+    }
+
+    &-container {
+        justify-content: center;
+    }
+
     &-image {
         width: 100%;
-        height: 21rem;
+        height: 50%;
         position: relative;
+
+        @media screen and (min-width: $lg-break) {
+            min-width: 50%;
+            max-width: 50%;
+            height: 100%;
+        }
+
         &-icon {
             position: absolute;
             top: 1.5rem;
@@ -91,6 +107,32 @@
             img {
                 height: 20px;
                 margin-right: 0.75rem;
+            }
+        }
+    }
+
+    &-text {
+        @media screen and (min-width: $lg-break) {
+            padding: 5rem 3rem;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            .h5 {
+                font-size: 50px;
+                line-height: 48px;
+                margin: 2rem 0;
+            }
+
+            .description {
+                flex-grow: 1;
+            }
+
+            &-details {
+                margin-bottom: 3rem;
+            }
+
+            &-cta {
+                justify-content: flex-end;
             }
         }
     }
