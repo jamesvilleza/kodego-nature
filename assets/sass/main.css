@@ -454,6 +454,43 @@ span {
   margin-bottom: 2rem;
 }
 
+.section--stats {
+  position: relative;
+  display: flex;
+  background-color: #faded8;
+}
+
+.section--stats .container.section-container {
+  z-index: 1;
+}
+
+.section--stats .stats {
+  padding: 4rem 0;
+  justify-content: center;
+}
+
+.section--stats .stats-container {
+  background-color: #f39f8b;
+  border-radius: 1rem;
+  padding: 1rem 4rem;
+  box-shadow: 0 12px 24px 0 rgba(51, 9, 0, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .section--stats .stats-container {
+    padding: 1rem 2rem;
+  }
+}
+
+.section--stats .stats-item {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.section--stats .stats-item .h2 {
+  margin-bottom: 0;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

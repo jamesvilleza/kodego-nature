@@ -193,4 +193,37 @@
             margin-bottom: 2rem;
         }
     }
+
+    &--stats {
+        position: relative;
+        display: flex;
+        background-color: $color-pink-light;
+        .container.section-container {
+            z-index: 1;
+        }
+
+        .stats {
+            padding: 4rem 0;
+            justify-content: center;
+            &-container {
+                background-color: $color-pink;
+                border-radius: 1rem;
+                padding: 1rem 4rem;
+                box-shadow: 0 12px 24px 0 rgba(51, 9, 0, 0.15);
+
+                @media screen and (min-width: $md-break) {
+                    padding: 1rem 2rem;
+                }
+            }
+
+            &-item {
+                text-align: center;
+                padding: 2rem 0;
+
+                .h2 {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
