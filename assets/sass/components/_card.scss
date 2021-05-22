@@ -138,6 +138,60 @@
         }
     }
 }
+
+.card-stories {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 1.5rem 1.5rem;
+    z-index: 2;
+
+    &-bg {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        z-index: 2;
+        &-container {
+            height: 100%;
+            width: 100%;
+            padding-top: 5rem;
+            position: absolute;
+        }
+    }
+    &-content {
+        padding: 0 1.5rem 1.5rem;
+        z-index: 2;
+        .btn-outline {
+            width: auto;
+            text-align: center;
+            color: $color-green-dark;
+        }
+        &-image {
+            img {
+                width: 100%;
+            }
+        }
+        &-image,
+        .btn,
+        .h5,
+        .description {
+            margin-bottom: 1rem;
+        }
+        &-details {
+            margin-bottom: 2rem;
+            span:first-of-type {
+                margin-right: 3rem;
+            }
+            img {
+                height: 20px;
+                margin-right: 0.75rem;
+            }
+        }
+    }
+}
+
 .card-route {
     position: relative;
     display: flex;

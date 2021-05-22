@@ -324,6 +324,10 @@ footer {
   text-align: center;
 }
 
+footer .column {
+  margin-top: 1rem;
+}
+
 footer h3 {
   margin-bottom: 2rem;
 }
@@ -418,7 +422,7 @@ footer li:not(:last-of-type) {
   bottom: -1px;
 }
 
-.section--locations, .section--routes {
+.section--stories, .section--locations, .section--routes {
   background-color: #faded8;
 }
 
@@ -426,7 +430,7 @@ footer li:not(:last-of-type) {
   background-color: #235055;
 }
 
-.section--services .h4, .section--hero .h4, .section--routes .h4, .section--locations .h4, .section--about .h4 {
+.section--stories .h4, .section--services .h4, .section--hero .h4, .section--routes .h4, .section--locations .h4, .section--about .h4 {
   letter-spacing: 3px;
   margin: 2rem 0;
 }
@@ -474,6 +478,44 @@ footer li:not(:last-of-type) {
   }
   .section--locations .circle-pink,
   .section--locations .circle-green {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
+.section--stories {
+  z-index: 1;
+  position: relative;
+  overflow-x: clip;
+}
+
+.section--stories .circle-pink,
+.section--stories .circle-green {
+  z-index: 0;
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .section--stories .circle-pink {
+    top: -10vw;
+    right: 0;
+    background-color: #f39f8b;
+    margin-right: -8vw;
+    width: 35vw;
+    height: 35vw;
+  }
+  .section--stories .circle-green {
+    top: 0;
+    left: 0;
+    background-color: #86d07e;
+    margin-top: 20vw;
+    margin-left: -8vw;
+    width: 40vw;
+    height: 40vw;
+  }
+  .section--stories .circle-pink,
+  .section--stories .circle-green {
     position: absolute;
     border-radius: 50%;
     display: inline-block;
@@ -1014,6 +1056,65 @@ footer li:not(:last-of-type) {
   .card-adventure-text-cta {
     justify-content: flex-end;
   }
+}
+
+.card-stories {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 1.5rem 1.5rem;
+  z-index: 2;
+}
+
+.card-stories-bg {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: 2;
+}
+
+.card-stories-bg-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 5rem;
+  position: absolute;
+}
+
+.card-stories-content {
+  padding: 0 1.5rem 1.5rem;
+  z-index: 2;
+}
+
+.card-stories-content .btn-outline {
+  width: auto;
+  text-align: center;
+  color: #001d20;
+}
+
+.card-stories-content-image img {
+  width: 100%;
+}
+
+.card-stories-content-image,
+.card-stories-content .btn,
+.card-stories-content .h5,
+.card-stories-content .description {
+  margin-bottom: 1rem;
+}
+
+.card-stories-content-details {
+  margin-bottom: 2rem;
+}
+
+.card-stories-content-details span:first-of-type {
+  margin-right: 3rem;
+}
+
+.card-stories-content-details img {
+  height: 20px;
+  margin-right: 0.75rem;
 }
 
 .card-route {

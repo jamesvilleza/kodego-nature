@@ -67,6 +67,10 @@ footer {
     color: white;
     text-align: center;
 
+    .column {
+        margin-top: 1rem;
+    }
+
     h3 {
         margin-bottom: 2rem;
     }
@@ -149,6 +153,7 @@ footer {
         width: 100%;
         bottom: -1px;
     }
+    &--stories,
     &--locations,
     &--routes {
         background-color: $color-pink-light;
@@ -157,6 +162,7 @@ footer {
     &--services {
         background-color: $color-green-light;
     }
+    &--stories,
     &--services,
     &--hero,
     &--routes,
@@ -203,6 +209,44 @@ footer {
                 background-color: #86d07e;
                 margin-top: 20vw;
                 margin-right: -8vw;
+                width: 40vw;
+                height: 40vw;
+            }
+
+            .circle-pink,
+            .circle-green {
+                position: absolute;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        }
+    }
+
+    &--stories {
+        z-index: 1;
+        position: relative;
+        overflow-x: clip;
+        .circle-pink,
+        .circle-green {
+            z-index: 0;
+            display: none;
+        }
+        @media screen and (min-width: $lg-break) {
+            .circle-pink {
+                top: -10vw;
+                right: 0;
+                background-color: $color-pink;
+                margin-right: -8vw;
+                width: 35vw;
+                height: 35vw;
+            }
+
+            .circle-green {
+                top: 0;
+                left: 0;
+                background-color: #86d07e;
+                margin-top: 20vw;
+                margin-left: -8vw;
                 width: 40vw;
                 height: 40vw;
             }
