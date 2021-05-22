@@ -1,33 +1,33 @@
 .btn-outline {
-  border: solid 1px white;
-  padding: 0.75rem 3rem;
-  margin: auto 0;
-  border-radius: 1.25rem;
-  width: fit-content;
-  &--navigation {
-    display: flex;
-    border-radius: 50%;
-    height: 48px;
-    width: 48px;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-  }
+    border: solid 1px white;
+    padding: 0.75rem 3rem;
+    margin: auto 0;
+    border-radius: 1.25rem;
+    width: fit-content;
+    &--navigation {
+        // display: flex;
+        // border-radius: 50%;
+        // height: 48px;
+        // width: 48px;
+        // padding: 0;
+        // justify-content: center;
+        // align-items: center;
+    }
 }
 
 .btn {
-  width: fit-content;
-  border: none;
-  background-color: $color-pink;
-  padding: 0.75rem 1.25rem;
-  border-radius: 1.25rem;
-  &-small {
-    padding: 0.625rem 1rem;
-  }
+    width: fit-content;
+    border: none;
+    background-color: $color-pink;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.25rem;
+    &-small {
+        padding: 0.625rem 1rem;
+    }
 }
 
 .pink {
-  border: solid 1px $color-pink;
-  border-radius: 1.25rem;
-  justify-content: center;
+    border: solid 1px $color-pink;
+    border-radius: 1.25rem;
+    justify-content: center;
 }
