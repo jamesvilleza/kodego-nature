@@ -358,6 +358,7 @@ span {
 }
 
 .section-image {
+  margin: auto;
   text-align: center;
 }
 
@@ -384,7 +385,7 @@ span {
 .section-wave-up {
   position: absolute;
   width: 100%;
-  margin-top: -9%;
+  bottom: -1px;
 }
 
 .section--locations, .section--routes {
@@ -395,15 +396,21 @@ span {
   background-color: #235055;
 }
 
-.section--routes .h4, .section--locations .h4, .section--about .h4 {
+.section--services .h4, .section--hero .h4, .section--routes .h4, .section--locations .h4, .section--about .h4 {
   letter-spacing: 3px;
   margin: 2rem 0;
 }
 
-.section--about .h4,
-.section--about .h3,
+.section--routes {
+  position: relative;
+}
+
+.section--about {
+  padding: 4rem 0;
+}
+
 .section--about .description {
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 }
 
 .section--locations {
@@ -441,6 +448,10 @@ span {
     border-radius: 50%;
     display: inline-block;
   }
+}
+
+.section--services .h3 {
+  margin-bottom: 2rem;
 }
 
 .container {
