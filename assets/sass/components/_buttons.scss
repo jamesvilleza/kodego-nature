@@ -4,17 +4,13 @@
     margin: auto 0;
     border-radius: 1.25rem;
     width: fit-content;
-    &--navigation {
-        // display: flex;
-        // border-radius: 50%;
-        // height: 48px;
-        // width: 48px;
-        // padding: 0;
-        // justify-content: center;
-        // align-items: center;
-    }
 }
-
+.btn-outline:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
 .btn {
     width: fit-content;
     border: none;
@@ -23,11 +19,43 @@
     border-radius: 1.25rem;
     &-small {
         padding: 0.625rem 1rem;
+        color: white;
     }
+}
+.btn-small:hover {
+    color: $color-green-dark;
+}
+.btn:hover {
+    background-color: $color-pink-light;
+    cursor: pointer;
+    color: $color-green-dark;
+    transition: 0.5s;
 }
 
 .pink {
     border: solid 1px $color-pink;
     border-radius: 1.25rem;
     justify-content: center;
+}
+.pink:hover {
+    cursor: pointer;
+    background-color: $color-pink;
+    transform: scale(1.08);
+    color: white !important;
+    transition: 0.5s;
+}
+.btn-orange {
+    background-color: $color-orange;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.25rem;
+}
+.btn-white:hover {
+    background-color: white;
+    color: $color-green-dark;
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: 0.5s;
 }

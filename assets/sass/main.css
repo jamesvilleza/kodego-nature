@@ -593,6 +593,13 @@ footer li:not(:last-of-type) {
   }
 }
 
+@media screen and (max-width: 576px) {
+  .section--start .start-container {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .section--start .start-item .h2 {
   margin: 0;
 }
@@ -880,6 +887,13 @@ footer li:not(:last-of-type) {
   width: fit-content;
 }
 
+.btn-outline:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
 .btn {
   width: fit-content;
   border: none;
@@ -890,12 +904,49 @@ footer li:not(:last-of-type) {
 
 .btn-small {
   padding: 0.625rem 1rem;
+  color: white;
+}
+
+.btn-small:hover {
+  color: #001d20;
+}
+
+.btn:hover {
+  background-color: #faded8;
+  cursor: pointer;
+  color: #001d20;
+  transition: 0.5s;
 }
 
 .pink {
   border: solid 1px #f39f8b;
   border-radius: 1.25rem;
   justify-content: center;
+}
+
+.pink:hover {
+  cursor: pointer;
+  background-color: #f39f8b;
+  transform: scale(1.08);
+  color: white !important;
+  transition: 0.5s;
+}
+
+.btn-orange {
+  background-color: #dc5534;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.btn-white:hover {
+  background-color: white;
+  color: #001d20;
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.5s;
 }
 
 .card-icon {
@@ -957,6 +1008,18 @@ footer li:not(:last-of-type) {
 @media screen and (min-width: 992px) {
   .card-adventure {
     flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-adventure {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-adventure {
+    height: 100vh;
   }
 }
 
@@ -1078,7 +1141,7 @@ footer li:not(:last-of-type) {
 .card-stories-bg-container {
   height: 100%;
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
   position: absolute;
 }
 
@@ -1095,6 +1158,7 @@ footer li:not(:last-of-type) {
 
 .card-stories-content-image img {
   width: 100%;
+  border-radius: 1.2rem;
 }
 
 .card-stories-content-image,
@@ -1135,7 +1199,7 @@ footer li:not(:last-of-type) {
 
 @media screen and (min-width: 992px) {
   .card-route {
-    min-width: calc(4 / 12 * 100% - 3rem);
+    min-width: calc(4 / 12 * 100% - 1rem);
   }
 }
 
@@ -1144,7 +1208,8 @@ footer li:not(:last-of-type) {
   padding-bottom: 2rem;
   z-index: 2;
   flex-wrap: nowrap;
-  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1163,7 +1228,6 @@ footer li:not(:last-of-type) {
 
 .card-route-slider-bg {
   background-color: #f39f8b;
-  width: 100%;
   height: 100%;
   border-radius: 1rem;
   z-index: 2;
@@ -1177,16 +1241,36 @@ footer li:not(:last-of-type) {
   flex-grow: 1;
 }
 
+@media screen and (max-width: 575px) {
+  .card-route-slider-bg-container {
+    margin-left: -0.5rem;
+    width: 400vw;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .card-route-slider-bg-container {
+    margin-left: -0.5rem;
+    width: 400vw;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-route-slider-bg-container {
     margin-left: -0.5rem;
+    width: 175vw;
   }
 }
 
 @media screen and (min-width: 992px) {
   .card-route-slider-bg-container {
     margin-left: -2rem;
+    width: 125%;
   }
+}
+
+.card-route-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .card-route-bg {
@@ -1217,6 +1301,8 @@ footer li:not(:last-of-type) {
 
 .card-route-content-image img {
   width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
 }
 
 .card-route-content-image,
@@ -1273,6 +1359,10 @@ footer li:not(:last-of-type) {
     padding-left: 10vw;
     padding-right: 10vw;
   }
+}
+
+.card-location-slider::-webkit-scrollbar {
+  display: none;
 }
 
 .card-location-icon {
